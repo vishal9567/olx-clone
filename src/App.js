@@ -1,4 +1,4 @@
-import React, { useEffect, useContext } from 'react';
+import React, { useEffect, useContext, useState } from 'react';
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
@@ -21,10 +21,10 @@ function App() {
       setUser(user)
     })
   })
-  return (
-    <div>
-      <Post>
 
+  return (
+     <div>
+      <Post>
         <Router>
           <Routes>
             <Route Component={Home} path='/' />
